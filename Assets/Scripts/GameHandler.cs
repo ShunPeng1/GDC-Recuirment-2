@@ -13,7 +13,7 @@ public class GameHandler : InstanceManager<GameHandler>
         Initializing
     }
 
-    [SerializeField] private GameStates gameStates = GameStates.Occurring;
+    //[SerializeField] private GameStates gameStates = GameStates.Occurring;
 
     
 }

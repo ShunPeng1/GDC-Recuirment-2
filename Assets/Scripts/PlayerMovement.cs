@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Palmmedia.ReportGenerator.Core;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -50,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity += Vector3.left;
         }
-        else if (Input.GetKey(KeyCode.D))
+        
+        if (Input.GetKey(KeyCode.D))
         {
             velocity += Vector3.right;
         }
@@ -59,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity += Vector3.forward;
         }
-        else if (Input.GetKey(KeyCode.S))
+        
+        if (Input.GetKey(KeyCode.S))
         {
             velocity += Vector3.back;
         }
